@@ -1,0 +1,699 @@
+PS E:\Scripts\peteshaw> $url = https://usfema.sharepoint.com/teams/R10MITHMA
+https://usfema.sharepoint.com/teams/R10MITHMA : The term 'https://usfema.sharepoint.com/teams/R10MITHMA' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:8
++ $url = https://usfema.sharepoint.com/teams/R10MITHMA
++        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (https://usfema....teams/R10MITHMA:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+PS E:\Scripts\peteshaw> $url = "https://usfema.sharepoint.com/teams/R10MITHMA"
+
+PS E:\Scripts\peteshaw> 
+Connect-PnPOnline -Url $Url -Credentials SPO
+WARNING: 
+You are running the legacy version of PnP PowerShell.
+This version will be archived soon which means that while staying available, no updates or fixes will be released.
+Consider installing the newer prereleased cross-platform version of PnP PowerShell:
+
+Uninstall-Module -Name SharePointPnPPowerShellOnline -AllVersions -Force
+Install-Module -Name PnP.PowerShell -AllowPrerelease
+
+Read more about the new cross-platform version of PnP PowerShell at
+
+https://pnp.github.io/powershell
+
+The new version of PnP PowerShell will be released as 1.0 in January 2021.
+
+
+PS E:\Scripts\peteshaw> GetPnPList
+GetPnPList : The term 'GetPnPList' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:1 char:1
++ GetPnPList
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (GetPnPList:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+PS E:\Scripts\peteshaw> Get-PnPList
+
+Title                                                       Id                                   Url                                                              
+-----                                                       --                                   ---                                                              
+1 History                                                   4a2ea005-0bf7-4485-8251-232a1a8cf01a /teams/R10MITHMA/Lists/1 History                                 
+Access Requests                                             6fb7ed0e-2831-4cc5-9192-9bd042273654 /teams/R10MITHMA/Access Requests                                 
+Agencies                                                    6a827c71-6980-493a-a380-c818787ef70f /teams/R10MITHMA/Lists/Recipients                                
+Announcements                                               393e3173-a827-4c25-894e-ad596435def2 /teams/R10MITHMA/Lists/Announcements                             
+appdata                                                     ab8d35b7-a2d1-4bf7-b867-1f92a810cb2c /teams/R10MITHMA/_catalogs/appdata                               
+appfiles                                                    b7c6b0ad-3ca9-4b27-af2d-5892cb4c00b9 /teams/R10MITHMA/_catalogs/appfiles                              
+Availability                                                ecb207df-d5ba-43a2-a4a4-8c4772937166 /teams/R10MITHMA/Lists/Availability                              
+Cache Profiles                                              7154619f-226e-45b9-a71c-b5838103fd32 /teams/R10MITHMA/Cache Profiles                                  
+Calculate_Item_Total History                                c05dcea0-a738-4a3e-8504-9aa09548e5f4 /teams/R10MITHMA/Lists/Calculate_Item_Total History              
+Calendar                                                    f1e3e858-8d0c-4695-9271-a3a51c0d4ceb /teams/R10MITHMA/Lists/Calendar                                  
+Composed Looks                                              57ed0394-312d-4dfb-a6f0-907db928fafd /teams/R10MITHMA/_catalogs/design                                
+Content and Structure Reports                               b1ca48cc-478f-4d9d-8102-99f50fdd4e9a /teams/R10MITHMA/Reports List                                    
+Content Organizer Rules                                     3ded8028-8a91-4650-acae-f9116c863f9c /teams/R10MITHMA/RoutingRules                                    
+Content type publishing error log                           8c2b6b21-0089-42a1-898a-f1218fd86fb1 /teams/R10MITHMA/Lists/ContentTypeSyncLog                        
+Converted Forms                                             1f490ae6-e72e-49b4-8789-fce4d12168eb /teams/R10MITHMA/IWConvertedForms                                
+Customized Reports                                          e2177211-e6da-46b6-822c-028e6122f4bc /teams/R10MITHMA/AnalyticsReports                                
+Device Channels                                             907bd7fe-e927-4c17-a196-8b0deb3b8040 /teams/R10MITHMA/DeviceChannels                                  
+Disaster Grant Notes                                        fa00a3ec-67c7-4ba9-9b0a-d4752ceec6ff /teams/R10MITHMA/Lists/Disaster_Grant_Notes                      
+Disaster Grants                                             cc943a7b-7ddf-4bac-800d-7f6e31cc7a97 /teams/R10MITHMA/Grant Files                                     
+Disaster Grants (Program Management)                        c0b800d7-f408-4feb-a9f9-17e71b6c77f3 /teams/R10MITHMA/DisasterGrantsProgramManagement                 
+DO_NOT_DELETE_SPLIST_SITECOLLECTION_AGGREGATED_CONTENTTYPES 162ac32e-df4a-42c7-92e1-2563a8733dd2 /teams/R10MITHMA/Lists/DO_NOT_DELETE_SPLIST_SITECOLLECTION_AGG...
+Documents                                                   81cacf73-01dc-4b0c-9549-50010b20a7c6 /teams/R10MITHMA/Documents                                       
+Drop Off Library                                            f1666e9d-7ab4-4506-b91b-c37cf2587eb8 /teams/R10MITHMA/DropOffLibrary                                  
+EHP Review                                                  8a9ae3b6-8595-4e18-9aaf-b5d64457d8c0 /teams/R10MITHMA/Lists/EHP_Review                                
+Form Templates                                              c92d2ccb-8043-4ef0-b4d1-ef0424eb8973 /teams/R10MITHMA/FormServerTemplates                             
+fpdatasources                                               f16ee98b-e162-4b80-a6f8-505bc4d8a860 /teams/R10MITHMA/_catalogs/fpdatasources                         
+GNDB_Table_Disaster_Data                                    e8fafd81-a9f7-4c20-b1a6-224dbfdaa32d /teams/R10MITHMA/Lists/GNDB_Table_Disaster_Data                  
+GNDB_Table_HMA_Grant_Data                                   dd139f84-dbab-4fbe-a29a-242bc32bce89 /teams/R10MITHMA/Lists/GNDB_Table_HMA_Grant_Data                 
+Grant Policy - Guidance                                     6a40a7b6-ff13-4887-9d14-642e738f1eda /teams/R10MITHMA/Grant PolicyGuidance                            
+HMA E&C Review Checklist                                    b2fa8abb-c2c7-4762-930f-a5945804d3bf /teams/R10MITHMA/Lists/ergergerg                                 
+HMA_Communications                                          abfc8da8-bc8f-4c5b-9eab-051600659083 /teams/R10MITHMA/HMA_Communications                              
+Hold Reports                                                9e036b4b-c584-4972-9343-be6177f814f9 /teams/R10MITHMA/HoldReports                                     
+Holds                                                       68586905-9632-4a99-9772-ea2b006b2838 /teams/R10MITHMA/Lists/Holds                                     
+Images                                                      172db348-0c2d-4e7d-a04e-217d66b9f61d /teams/R10MITHMA/PublishingImages                                
+Items To Purchase                                           177fd6be-e903-4d2e-a1db-e76cedd12a8c /teams/R10MITHMA/Lists/Items_To_Purchase                         
+Jeff_Library                                                855d06ed-0f5e-45c3-a518-527323b02be4 /teams/R10MITHMA/Jeff_Library                                    
+JRM_Test_2021                                               598492c3-4985-4432-99f0-63737b6e95a8 /teams/R10MITHMA/JRM_Test_2021                                   
+Links                                                       5d25837a-1eeb-47b8-9d30-6ce8d6c5d11f /teams/R10MITHMA/Lists/Links                                     
+List Template Gallery                                       ab932f3f-5d42-4562-a3f3-446c8690f052 /teams/R10MITHMA/_catalogs/lt                                    
+Long Running Operation Status                               8c7bad6c-ef9b-473d-998f-f71f62bf37ec /teams/R10MITHMA/Long Running Operation Status                   
+Maintenance Log Library                                     a96b57b0-1c6e-4d68-8e1d-97a5a38f07e1 /teams/R10MITHMA/_catalogs/MaintenanceLogs                       
+Management                                                  33707cff-d303-42b2-a06d-c04701e432d7 /teams/R10MITHMA/Management                                      
+Master Page Gallery                                         7df33819-41bb-4c69-9ff5-3c9680f757a0 /teams/R10MITHMA/_catalogs/masterpage                            
+MicroFeed                                                   ca9e59e3-7b48-4966-b207-9483805817b7 /teams/R10MITHMA/Lists/PublishedFeed                             
+Non-Disaster Grant Notes                                    c46c27d8-2556-4db8-921a-47d085b052c5 /teams/R10MITHMA/Lists/NonDisasterGrantNotes                     
+Non-Disaster Grants                                         c9aaefa9-782c-4919-8b1f-27109432bad3 /teams/R10MITHMA/NonDisaster_Grants                              
+Non-Disaster Grants (Program Management)                    e6764400-8eab-4d6e-b7b6-4ee62fb6d27c /teams/R10MITHMA/Non_Disaster_Grants_Program_Management          
+Notification List                                           03e0e57d-5643-4afa-a450-f2c087660616 /teams/R10MITHMA/Notification Pages                              
+Pages                                                       054c6363-0efa-4080-a714-f97b4f83a96f /teams/R10MITHMA/Pages                                           
+Phone Call Memo                                             1122a422-26ce-47c4-984c-bba864b8f6a5 /teams/R10MITHMA/Lists/Phone Call Memo                           
+Project Policy Item List                                    304ea5cb-25c8-4a4c-ae18-43f6750605e1 /teams/R10MITHMA/ProjectPolicyItemList                           
+Project Type                                                66db7291-12c0-46a7-83bf-8f54f1c26d60 /teams/R10MITHMA/Lists/GNDB_Project_Type                         
+Quarterly Reports                                           df96d7f2-3b7c-4b17-982f-162ace6f1fbe /teams/R10MITHMA/QuarterlyReports                                
+Quick Deploy Items                                          8b513f7d-7577-453c-b8af-db81366ab332 /teams/R10MITHMA/Quick Deploy Items                              
+Regional Share Library                                      0091b3a1-57d1-4272-9d7d-91a941f7d784 /teams/R10MITHMA/Regional Share                                  
+Relationships List                                          dbceccda-5108-4c84-a76f-9c2f78ab5866 /teams/R10MITHMA/Relationships List                              
+Reporting Metadata                                          752200b8-5bc3-4f6b-94f6-c72f31f00e70 /teams/R10MITHMA/Lists/Reporting Metadata                        
+Reporting Templates                                         336b000e-da47-476a-b099-bc833ed03934 /teams/R10MITHMA/Reporting Templates                             
+Resources                                                   f4e6c345-3367-4980-b528-301bf786725d /teams/R10MITHMA/Lists/Facilities and Shared Assets              
+Reusable Content                                            60cb4a59-79ed-4888-9daf-294d6804a652 /teams/R10MITHMA/ReusableContent                                 
+Sharing Links                                               e32d81ee-aded-4fb1-b0d8-691a9100f7c7 /teams/R10MITHMA/Sharing Links                                   
+Site Assets                                                 78bfa111-ee05-4e61-8019-b7c26d0dcec3 /teams/R10MITHMA/SiteAssets                                      
+Site Collection Documents                                   37f9c62a-f2ab-4fdd-99f5-e1ed61386b0a /teams/R10MITHMA/SiteCollectionDocuments                         
+Site Collection Images                                      3931c586-032a-4e62-a470-713d4a7f6b14 /teams/R10MITHMA/SiteCollectionImages                            
+Site Pages                                                  01aec3ce-67a9-400d-ba12-53cabb02319e /teams/R10MITHMA/SitePages                                       
+Solution Gallery                                            ca63cb1a-3eb1-4b73-8885-e2efce3a777f /teams/R10MITHMA/_catalogs/solutions                             
+Style Library                                               2e1a84e3-e669-4b26-a436-986e5995fede /teams/R10MITHMA/Style Library                                   
+SubGrant Files                                              aa4fc6c4-ae0d-4fd8-ba6e-116717fb57ee /teams/R10MITHMA/Shared Documents                                
+Subgrant Milestones                                         4772dfb9-4110-4722-b68a-c6810deef82b /teams/R10MITHMA/Lists/Subgrant_Actions                          
+Subgrant Notes                                              5edbe658-f578-4d04-a2f9-9d1030ecc211 /teams/R10MITHMA/Lists/Subgrant_Notes                            
+Submitted E-mail Records                                    3d98024b-a414-45a8-ba25-57d7f47b8eb9 /teams/R10MITHMA/Lists/Submitted Email Records                   
+Suggested Content Browser Locations                         3abc8f74-27ae-43c5-bd5a-0fa53bf17294 /teams/R10MITHMA/PublishedLinks                                  
+Tasks                                                       a6fddcfa-d75e-4f42-858e-a229a6776c84 /teams/R10MITHMA/Lists/Tasks                                     
+TaxonomyHiddenList                                          f7f81de8-a33a-4268-a79e-6ce9625c81cc /teams/R10MITHMA/Lists/TaxonomyHiddenList                        
+Templates                                                   3b73a00e-1d39-4449-a931-8a128fe69959 /teams/R10MITHMA/Templates                                       
+Theme Gallery                                               339f27c2-e138-4420-8c28-7159e68d2e9b /teams/R10MITHMA/_catalogs/theme                                 
+Translation Packages                                        44ed2915-2191-42da-b611-a8c64eafe30e /teams/R10MITHMA/Translation Packages                            
+Translation Status                                          78f490cf-6741-4985-8c68-44fa38be639c /teams/R10MITHMA/Translation Status                              
+User Information List                                       41fe582d-e365-47ff-a175-192ba8740780 /teams/R10MITHMA/_catalogs/users                                 
+Variation Labels                                            4b50196d-288f-4ef8-a1dd-5d4dda442de0 /teams/R10MITHMA/Variation Labels                                
+Web Part Gallery                                            d490fa49-55be-4ffd-ae64-9e743f6c379a /teams/R10MITHMA/_catalogs/wp                                    
+wfpub                                                       d065624a-9f47-4422-9ce9-de035f589ffa /teams/R10MITHMA/_catalogs/wfpub                                 
+wfsvc                                                       6a02e529-baa4-4123-af36-142034b9ebb5 /teams/R10MITHMA/wfsvc                                           
+Workflow History                                            659ad786-8867-4e54-88cb-a163f544e668 /teams/R10MITHMA/Lists/Workflow History                          
+Workflow Tasks                                              7ef0f624-6b5c-48c6-b96e-3db40ef8e483 /teams/R10MITHMA/WorkflowTasks                                   
+Workflows                                                   8e428f97-1fc9-4d3f-9eeb-39115796ea86 /teams/R10MITHMA/Workflows                                       
+
+
+
+PS E:\Scripts\peteshaw> $list = Get-PnPList -Identity "Disaster Grants"
+
+PS E:\Scripts\peteshaw> $contentTypes = $list.ContentTypes
+
+PS E:\Scripts\peteshaw> $contentTypes
+An error occurred while enumerating through a collection: The collection has not been initialized. It has not been requested or the request has not been 
+executed. It may need to be explicitly requested..
+At line:1 char:1
++ $contentTypes
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (Microsoft.Share...nt.ContentType]:<GetEnumerator>d__0) [], RuntimeException
+    + FullyQualifiedErrorId : BadEnumeration
+ 
+
+PS E:\Scripts\peteshaw> $list.Update(
+Missing ')' in method call.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingEndParenthesisInMethodCall
+ 
+
+PS E:\Scripts\peteshaw> Get-PnPContentType -Identity "Any Document" -List "Disaster Grants"
+
+Name                           Id                             Group                          Description                   
+----                           --                             -----                          -----------                   
+Any Document                   0x010100A5F7A847844E894A839... Document Content Types         Create a new document.        
+
+
+
+PS E:\Scripts\peteshaw> $ctype = Get-PnPContentType -Identity "Any Document" -List "Disaster Grants"
+
+PS E:\Scripts\peteshaw> $ctype.Fields
+An error occurred while enumerating through a collection: The collection has not been initialized. It has not been requested or the request has not been 
+executed. It may need to be explicitly requested..
+At line:1 char:1
++ $ctype.Fields
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (Microsoft.Share...t.Client.Field]:<GetEnumerator>d__0) [], RuntimeException
+    + FullyQualifiedErrorId : BadEnumeration
+ 
+
+PS E:\Scripts\peteshaw> $connection = Connect-PnPOnline -Url $Url -Credentials SPO
+
+PS E:\Scripts\peteshaw> $ctype.Fields
+An error occurred while enumerating through a collection: The collection has not been initialized. It has not been requested or the request has not been 
+executed. It may need to be explicitly requested..
+At line:1 char:1
++ $ctype.Fields
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (Microsoft.Share...t.Client.Field]:<GetEnumerator>d__0) [], RuntimeException
+    + FullyQualifiedErrorId : BadEnumeration
+ 
+
+PS E:\Scripts\peteshaw> $ctype = Get-PnPContentType -Identity "Any Document" -List "Disaster Grants"
+
+PS E:\Scripts\peteshaw> $ctype.Fields
+An error occurred while enumerating through a collection: The collection has not been initialized. It has not been requested or the request has not been 
+executed. It may need to be explicitly requested..
+At line:1 char:1
++ $ctype.Fields
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (Microsoft.Share...t.Client.Field]:<GetEnumerator>d__0) [], RuntimeException
+    + FullyQualifiedErrorId : BadEnumeration
+ 
+
+PS E:\Scripts\peteshaw> $ctype.Fields.Count
+
+PS E:\Scripts\peteshaw> $ctype.Fields.Retrieve()
+
+PS E:\Scripts\peteshaw> $fields = $ctype.Fields.Retrieve()
+
+PS E:\Scripts\peteshaw> $fields
+
+PS E:\Scripts\peteshaw> Remove-PnPFieldFromContentType -list $list -ContentType $ctype -Field "Description (do not use)"
+Remove-PnPFieldFromContentType : A parameter cannot be found that matches parameter name 'list'.
+At line:1 char:32
++ Remove-PnPFieldFromContentType -list $list -ContentType $ctype -Field ...
++                                ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-PnPFieldFromContentType], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,PnP.PowerShell.Commands.ContentTypes.RemoveFieldFromContentType
+ 
+
+PS E:\Scripts\peteshaw> Remove-PnPFieldFromContentType -ContentType $ctype -Field "Description (do not use)"
+Remove-PnPFieldFromContentType : Column 'Description (do not use)' does not exist. It may have been deleted by another user.
+At line:1 char:1
++ Remove-PnPFieldFromContentType -ContentType $ctype -Field "Descriptio ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (:) [Remove-PnPFieldFromContentType], ServerException
+    + FullyQualifiedErrorId : EXCEPTION,PnP.PowerShell.Commands.ContentTypes.RemoveFieldFromContentType
+
+PS E:\Scripts\peteshaw> $ctype
+
+Name                           Id                             Group                          Description                   
+----                           --                             -----                          -----------                   
+Any Document                   0x010100A5F7A847844E894A839... Document Content Types         Create a new document.        
+
+
+
+PS E:\Scripts\peteshaw> $ctype.Fields.Count
+
+PS E:\Scripts\peteshaw> $ctype.Fields.RefreshLoad()
+
+PS E:\Scripts\peteshaw> $ctype.Fields.Count
+
+PS E:\Scripts\peteshaw> $ctype.Field
+
+PS E:\Scripts\peteshaw> $ctype.Field
+
+PS E:\Scripts\peteshaw> $ctype.Fields
+An error occurred while enumerating through a collection: The collection has not been initialized. It has not been requested or the request has not been 
+executed. It may need to be explicitly requested..
+At line:1 char:1
++ $ctype.Fields
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (Microsoft.Share...t.Client.Field]:<GetEnumerator>d__0) [], RuntimeException
+    + FullyQualifiedErrorId : BadEnumeration
+ 
+
+PS E:\Scripts\peteshaw> $fields = $ctype.Fields
+
+PS E:\Scripts\peteshaw> $fields
+An error occurred while enumerating through a collection: The collection has not been initialized. It has not been requested or the request has not been 
+executed. It may need to be explicitly requested..
+At line:1 char:1
++ $fields
++ ~~~~~~~
+    + CategoryInfo          : InvalidOperation: (Microsoft.Share...t.Client.Field]:<GetEnumerator>d__0) [], RuntimeException
+    + FullyQualifiedErrorId : BadEnumeration
+ 
+
+PS E:\Scripts\peteshaw> $fields.AreItemsAvailable
+False
+
+PS E:\Scripts\peteshaw> Remove-PnPFieldFromContentType -ContentType "0x010100A5F7A847844E894A839" -Field "Description (do not use)"
+Remove-PnPFieldFromContentType : Column 'Description (do not use)' does not exist. It may have been deleted by another user.
+At line:1 char:1
++ Remove-PnPFieldFromContentType -ContentType "0x010100A5F7A847844E894A ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (:) [Remove-PnPFieldFromContentType], ServerException
+    + FullyQualifiedErrorId : EXCEPTION,PnP.PowerShell.Commands.ContentTypes.RemoveFieldFromContentType
+
+PS E:\Scripts\peteshaw> Remove-PnPFieldFromContentType -ContentType "0x010100A5F7A847844E894A839" -Field "Description (do not use)"
+Remove-PnPFieldFromContentType : Column 'Description (do not use)' does not exist. It may have been deleted by another user.
+At line:1 char:1
++ Remove-PnPFieldFromContentType -ContentType "0x010100A5F7A847844E894A ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (:) [Remove-PnPFieldFromContentType], ServerException
+    + FullyQualifiedErrorId : EXCEPTION,PnP.PowerShell.Commands.ContentTypes.RemoveFieldFromContentType
+
+PS E:\Scripts\peteshaw> Get-PnPContentType -InSiteHierarchy
+
+Name                           Id                             Group                          Description                   
+----                           --                             -----                          -----------                   
+System                         0x                             _Hidden                                                      
+Common Indicator Columns       0x00A7470EADF4194E2E9ED1031... _Hidden                                                      
+Fixed Value based Status In... 0x00A7470EADF4194E2E9ED1031... Business Intelligence          Create a new Status Indicat...
+SharePoint List based Statu... 0x00A7470EADF4194E2E9ED1031... Business Intelligence          Create a new Status Indicat...
+Excel based Status Indicator   0x00A7470EADF4194E2E9ED1031... Business Intelligence          Create a new Status Indicat...
+SQL Server Analysis Service... 0x00A7470EADF4194E2E9ED1031... Business Intelligence          Create a new Status Indicat...
+Item                           0x01                           List Content Types             Create a new list item.       
+Circulation                    0x01000F389E14C9CE4CE486270... Group Work Content Types       Add a new Circulation.        
+New Word                       0x010018F21907ED4E401CB4F14... Group Work Content Types       Add a New Word to this list.  
+Category                       0x010019ACC57FBA4146AFA4C82... Community Content Types        (Category Content Type Desc...
+Site Membership                0x010027FC2137D8DE4B00A40E1... Community Content Types        Add a new member              
+Community Member               0x010027FC2137D8DE4B00A40E1... Community Content Types        Add a new community member    
+WorkflowServiceDefinition      0x01002A2479FF33DD4BC3B1533... _Hidden                        WorkflowServiceDefinition     
+Reusable HTML                  0x01002CF74A4DAE39480396EEA... _Hidden                                                      
+Health Analyzer Rule Defini... 0x01003A8AA7A4F53046158C5AB... _Hidden                        Create a New Health Analyze...
+Published Link                 0x01004613D6562E4C41A7B9DAD... _Hidden                        Create a New Published Link   
+Resource                       0x01004C9F4486FBF54864A7B0A... Group Work Content Types       Add a new resource.           
+Reusable Text                  0x01004D5A79BAFA4A4576B79C5... _Hidden                                                      
+Official Notice                0x01007CE30DD1206047728BAFD... Group Work Content Types       Add a new Official Notice.    
+Phone Call Memo                0x0100807FBAC5EB8A4653B8D24... Group Work Content Types       Add a new Phone Call Memo.    
+Project Policy                 0x010085EC78BE64F9478AAE3ED... _Hidden                        Container content type for ...
+Page Output Cache              0x010087D89D279834C94E98E5E... _Hidden                        Page Output Cache is a syst...
+Device Channel                 0x01009AF87C5C1DF34CA38277F... _Hidden                        Create a channel to change ...
+Holiday                        0x01009BE2AB5291BF4C1A98691... Group Work Content Types       Add a new holiday.            
+What's New Notification        0x0100A2CA87FF01B442AD93F37... Group Work Content Types       Add a new What's New notifi...
+WorkflowServiceSubscription    0x0100AA27A923036E459D9EF0D... _Hidden                        WorkflowServiceSubscription   
+Timecard                       0x0100C30DDA8EDB2E434EA22D7... Group Work Content Types       Add a new timecard data.      
+Resource Group                 0x0100CA13F2F8D61541B180952... Group Work Content Types       Add a new resource group.     
+Rule                           0x0100DC2417D125A4489CA59DC... _Hidden                        Create a rule that moves co...
+Health Analyzer Report         0x0100F95DB3A97E8046B58C6A5... _Hidden                        A report from the health an...
+Users                          0x0100FBEEE6F0C500489B99CDA... Group Work Content Types       Add new users to this list.   
+Document                       0x0101                         Document Content Types         Create a new document.        
+Translation Status             0x01010000DEC92EFE5D445789D... _Hidden                        Translation State is a Cont...
+System Page Layout             0x01010007FF3E057FA8AB4AA42... _Hidden                        System Page Layout is a sys...
+Page Layout                    0x01010007FF3E057FA8AB4AA42... Publishing Content Types       Page Layout is a system con...
+Html Page Layout               0x01010007FF3E057FA8AB4AA42... Publishing Content Types       Build a SharePoint page lay...
+System Master Page             0x0101000F1C8B9E0EB4BE489F0... _Hidden                        System Master Page is a sys...
+ASP NET Master Page            0x0101000F1C8B9E0EB4BE489F0... Publishing Content Types       Master Page is a system con...
+Html Master Page               0x0101000F1C8B9E0EB4BE489F0... Publishing Content Types       Build a SharePoint master p...
+Display Template               0x0101002039C03B61C64EC4A04... _Hidden                        Base Content Type containin...
+Control Display Template       0x0101002039C03B61C64EC4A04... Display Template Content Types Control Display Templates c...
+Group Display Template         0x0101002039C03B61C64EC4A04... Display Template Content Types Group Display Templates are...
+Item Display Template          0x0101002039C03B61C64EC4A04... Display Template Content Types Item Display Templates allo...
+Filter Display Template        0x0101002039C03B61C64EC4A04... Display Template Content Types Filter Display Templates al...
+Display Template Code          0x0101002039C03B61C64EC4A04... _Hidden                        Display Template Code javas...
+JavaScript Display Template    0x0101002039C03B61C64EC4A04... Display Template Content Types Create a new custom CSR Jav...
+Non-Disaster Quarterly Report  0x0101004A5FB48D87D5F74A96A... .HMA Grantee                                                 
+Report                         0x01010058DDEB47312E4967BFC... Business Intelligence                                        
+Office Data Connection File    0x010100629D00608F814DD6AC8... _Hidden                                                      
+E-mail Submission              0x010100672A3FCA98991645BE0... Content Organizer Content T... This content type has colum...
+List View Style                0x010100734778F2B7DF462491F... Document Content Types         Create a new List View Style  
+Rich Media Asset               0x0101009148F5A04DDD49CBA71... Digital Asset Content Types    Upload an asset.              
+Video Rendition                0x0101009148F5A04DDD49CBA71... Digital Asset Content Types    Upload a video file.          
+Audio                          0x0101009148F5A04DDD49CBA71... Digital Asset Content Types    Upload an audio file.         
+Image                          0x0101009148F5A04DDD49CBA71... Digital Asset Content Types    Upload an image.              
+Site Page                      0x0101009D1CB255DA76424F860... Document Content Types         Create a new site page.       
+Repost Page                    0x0101009D1CB255DA76424F860... Document Content Types         Used to create a News link ...
+Web Part Page with Status List 0x010100A2E3C117A0C5482FAEE... Business Intelligence          Create a page that displays...
+HMGP Quarterly Report          0x010100A810E3244DB6E04899F... .HMA Grantee                                                 
+Universal Data Connection File 0x010100B4CBD48E029A4AD8B62... _Hidden                        Provide a standard place fo...
+Design File                    0x010100C5033D6CFB8447359FB... _Hidden                        HTML, JavaScript, CSS, imag...
+System Page                    0x010100C568DB52D9D0A14D9B2... _Hidden                        System Page is a system con...
+Page                           0x010100C568DB52D9D0A14D9B2... Publishing Content Types       Page is a system content ty...
+Article Page                   0x010100C568DB52D9D0A14D9B2... Page Layout Content Types      Article Page is a system co...
+Enterprise Wiki Page           0x010100C568DB52D9D0A14D9B2... Page Layout Content Types      Enterprise Wiki Page is the...
+Project Page                   0x010100C568DB52D9D0A14D9B2... Page Layout Content Types      Project Page is a content t...
+Welcome Page                   0x010100C568DB52D9D0A14D9B2... Page Layout Content Types      Welcome Page is a system co...
+Error Page                     0x010100C568DB52D9D0A14D9B2... Page Layout Content Types      Error Page is a system cont...
+Catalog-Item Reuse             0x010100C568DB52D9D0A14D9B2... Page Layout Content Types      The Catalog Item Reuse cont...
+Redirect Page                  0x010100C568DB52D9D0A14D9B2... Page Layout Content Types      Redirect Page is a system c...
+Translation Document           0x010100E4FE8612EC394E3690F... _Hidden                        Create a new document.        
+Translation Package            0x010100E8711F0F931646FA949... _Hidden                        Translation Package is a sy...
+InfoPath Form Template         0x010100F8EF98760CBA4A94994... _Hidden                        A Microsoft InfoPath Form T...
+Device Channel Mappings        0x010100FDA260FD09A244B183A... _Hidden                        Device Channel Mappings is ...
+Form                           0x010101                       Document Content Types         Fill out this form.           
+Picture                        0x010102                       Document Content Types         Upload an image or a photog...
+Unknown Document Type          0x010104                       Special Content Types          Allows users to upload docu...
+Master Page                    0x010105                       Document Content Types         Create a new master page.     
+Master Page Preview            0x010106                       Document Content Types         Create a new master page pr...
+User Workflow Document         0x010107                       _Hidden                        Items for use in user defin...
+Wiki Page                      0x010108                       Document Content Types         Create a new wiki page.       
+Basic Page                     0x010109                       Document Content Types         Create a new basic page.      
+Web Part Page                  0x01010901                     Document Content Types         Create a new Web Part page.   
+Link to a Document             0x01010A                       Document Content Types         Create a link to a document...
+Dublin Core Columns            0x01010B                       Document Content Types         The Dublin Core metadata el...
+Event                          0x0102                         List Content Types             Create a new meeting, deadl...
+Reservations                   0x0102004F51EFDEA49C49668EF... List Content Types             Reserve resource.             
+Schedule and Reservations      0x01020072BB2A38F0DB49C3A96... List Content Types             Create a new appointment an...
+Schedule                       0x0102007DBDC1392EAF4EBBBF9... List Content Types             Create new appointment.       
+Issue                          0x0103                         List Content Types             Track an issue or problem.    
+Announcement                   0x0104                         List Content Types             Create a new news item, sta...
+Link                           0x0105                         List Content Types             Create a new link to a Web ...
+Contact                        0x0106                         List Content Types             Store information about a b...
+Message                        0x0107                         List Content Types             Create a new message.         
+Task                           0x0108                         List Content Types             Track a work item that you ...
+Workflow Task (SharePoint 2... 0x0108003365C4474CAE8C42BCE... List Content Types             Create a SharePoint 2013 Wo...
+Workflow Task                  0x010801                       _Hidden                        A work item created by a wo...
+SharePoint Server Workflow ... 0x01080100C9C9515DE4E240019... _Hidden                        A work item created by a wo...
+Collect Feedback Workflow T... 0x01080100C9C9515DE4E240019... _Hidden                        A work item created by an w...
+Collect Signatures Workflow... 0x01080100C9C9515DE4E240019... _Hidden                        A work item created by an w...
+Approval Workflow Task (en-US) 0x01080100C9C9515DE4E240019... _Hidden                        A work item created by an w...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        عنصر عمل تم إنشاؤه من قبل س...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Работен елемент, създаден о...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Un element de treball creat...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        您或您的團隊需要完成之工作流程所建立的工作項目。      
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Pracovní položka vytvořená ...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Et arbejdselement, der er o...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Ein von einem Workflow erst...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Ένα στοιχείο εργασίας που δ...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        A work item created by an w...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Työnkulun luoma työkohde, j...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Élément de travail créé par...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        פריט עבודה שנוצר על-ידי זרי...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Egy saját maga vagy a csapa...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Elemento di lavoro creato d...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        個人またはチームで完了する必要のある、ワークフローから...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        사용자 또는 사용자 팀이 완료해야 하는 워크플로에...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Dit werkitem is gemaakt doo...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Et arbeidselement opprettet...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Element pracy utworzony w r...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Um item de trabalho criado ...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Un element de lucru creat d...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Созданная рабочим процессом...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Radna stavka koju je stvori...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Položka práce vytvorená pra...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Ett arbetsobjekt skapat av ...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        รายการงานที่สร้างขึ้นโดยเวิ...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Sizin veya ekibinizin tamam...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Item kerja dibuat oleh alur...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Робоче завдання, створене р...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Delovna naloga, ki jo je us...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Töövoo loodud tööüksus, mis...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Darbplūsmas izveidots darba...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Darbo elementas, sukurtas d...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Zuk edo zure taldeak burutu...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        किसी वर्कफ़्लो द्वारा बनाया...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Сіз немесе тобыңыз аяқтайты...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Elemento de traballo creado...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        工作流创建的、您或您的团队需要完成的工作项目。       
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Um item de trabalho criado ...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Stavka posla koju je kreira...
+Publishing Approval Workflo... 0x01080100C9C9515DE4E240019... _Hidden                        Un elemento de trabajo crea...
+Signatures Workflow Task De... 0x01080100C9C9515DE4E240019... _Hidden                        Deprecated                    
+Administrative Task            0x010802                       _Hidden                        An administrative work item...
+Workflow History               0x0109                         _Hidden                        The history of a workflow.    
+Person                         0x010A                         _Hidden                                                      
+SharePointGroup                0x010B                         _Hidden                                                      
+DomainGroup                    0x010C                         _Hidden                                                      
+Post                           0x0110                         List Content Types             Create a new blog post.       
+Comment                        0x0111                         List Content Types             Create a new blog comment.    
+East Asia Contact              0x0116                         List Content Types             Store information about a b...
+Folder                         0x0120                         Folder Content Types           Create a new folder.          
+RootOfList                     0x012001                       _Hidden                                                      
+Discussion                     0x012002                       Folder Content Types           Create a new discussion topic.
+Summary Task                   0x012004                       Folder Content Types           Group and describe related ...
+Document Collection Folder     0x0120D5                       _Hidden                        Create a new Document Colle...
+Document Set                   0x0120D520                     Document Set Content Types     Create a document set when ...
+Non-Disaster Subgrant          0x0120D520001167EFBB17D25F4... .HMA Subgrantee                                              
+Grant Level DocSet             0x0120D52000551D70CCAC68EC4... .HMA Grantee                                                 
+HMGP Subgrant                  0x0120D52000FEC8866B8E25664... .HMA Subgrantee                                              
+System Media Collection        0x0120D520A8                   _Hidden                        System type for a collectio...
+Video                          0x0120D520A808                 Digital Asset Content Types    Upload or link to a video.    
+
+
+
+PS E:\Scripts\peteshaw> Remove-PnPField -list $list -Identity "Description (do not use)"
+Remove-PnPField : The object is used in the context different from the one associated with the object.
+At line:1 char:1
++ Remove-PnPField -list $list -Identity "Description (do not use)"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (:) [Remove-PnPField], InvalidOperationException
+    + FullyQualifiedErrorId : EXCEPTION,PnP.PowerShell.Commands.Fields.RemoveField
+
+PS E:\Scripts\peteshaw> Get-PnPContentType -list $list
+Get-PnPContentType : The object is used in the context different from the one associated with the object.
+At line:1 char:1
++ Get-PnPContentType -list $list
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (:) [Get-PnPContentType], InvalidOperationException
+    + FullyQualifiedErrorId : EXCEPTION,PnP.PowerShell.Commands.ContentTypes.GetContentType
+
+PS E:\Scripts\peteshaw> Get-PnPContentType -list "Disaster Grants"
+
+Name                           Id                             Group                          Description                   
+----                           --                             -----                          -----------                   
+Any Document                   0x010100A5F7A847844E894A839... Document Content Types                                       
+Link to a Document             0x01010A0056FBDBD6AB521D49A... Document Content Types                                       
+Folder                         0x0120006C9A9A365C4D984088D... Folder Content Types                                         
+HMGP Disaster Record           0x0120D52000551D70CCAC68EC4... .HMA Grantee                                                 
+
+
+
+PS E:\Scripts\peteshaw> Remove-PnPFieldFromContentType -ContentType "0x010100A5F7A847844E894A839" -Field "Description (do not use)"
+Remove-PnPFieldFromContentType : Column 'Description (do not use)' does not exist. It may have been deleted by another user.
+At line:1 char:1
++ Remove-PnPFieldFromContentType -ContentType "0x010100A5F7A847844E894A ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (:) [Remove-PnPFieldFromContentType], ServerException
+    + FullyQualifiedErrorId : EXCEPTION,PnP.PowerShell.Commands.ContentTypes.RemoveFieldFromContentType
+
+PS E:\Scripts\peteshaw> Get-PnPContentType -list "Disaster Grants"
+
+Name                           Id                             Group                          Description                   
+----                           --                             -----                          -----------                   
+Any Document                   0x010100A5F7A847844E894A839... Document Content Types                                       
+Link to a Document             0x01010A0056FBDBD6AB521D49A... Document Content Types                                       
+Folder                         0x0120006C9A9A365C4D984088D... Folder Content Types                                         
+HMGP Disaster Record           0x0120D52000551D70CCAC68EC4... .HMA Grantee                                                 
+
+
+
+PS E:\Scripts\peteshaw> Get-PnPContentType -Identity 0x010100A5F7A847844E894A839
+
+PS E:\Scripts\peteshaw> $ctype = Get-PnPContentType -Identity 0x010100A5F7A847844E894A839
+
+PS E:\Scripts\peteshaw> $ctype
+
+PS E:\Scripts\peteshaw> $ctype.GetType(
+Missing ')' in method call.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingEndParenthesisInMethodCall
+ 
+
+PS E:\Scripts\peteshaw> $ctype.GetType()
+You cannot call a method on a null-valued expression.
+At line:1 char:1
++ $ctype.GetType()
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+ 
+
+PS E:\Scripts\peteshaw> $ctype.fieldtypes
+
+PS E:\Scripts\peteshaw> $ctx = Get-PnPContext
+
+PS E:\Scripts\peteshaw> $ctx.loac($ctype.fieldLINKS\)
+At line:1 char:28
++ $ctx.loac($ctype.fieldLINKS\)
++                            ~
+Missing ')' in method call.
+At line:1 char:28
++ $ctx.loac($ctype.fieldLINKS\)
++                            ~
+Unexpected token '\' in expression or statement.
+At line:1 char:29
++ $ctx.loac($ctype.fieldLINKS\)
++                             ~
+Unexpected token ')' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingEndParenthesisInMethodCall
+ 
+
+PS E:\Scripts\peteshaw> $ctx.loac($ctype.fieldLINKS)
+Method invocation failed because [OfficeDevPnP.Core.PnPClientContext] does not contain a method named 'loac'.
+At line:1 char:1
++ $ctx.loac($ctype.fieldLINKS)
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : MethodNotFound
+ 
+
+PS E:\Scripts\peteshaw> $ctx.loaD($ctype.fieldLINKS)
+Cannot find an overload for "loaD" and the argument count: "1".
+At line:1 char:1
++ $ctx.loaD($ctype.fieldLINKS)
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodCountCouldNotFindBest
+ 
+
+PS E:\Scripts\peteshaw> $ctx.Load($contentType.FieldLinks)
+Cannot find an overload for "loaD" and the argument count: "1".
+At line:1 char:1
++ $ctx.Load($contentType.FieldLinks)
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodCountCouldNotFindBest
+ 
+
+PS E:\Scripts\peteshaw> $ctx.Load($contentType.FieldLinks)
+Cannot find an overload for "loaD" and the argument count: "1".
+At line:1 char:1
++ $ctx.Load($contentType.FieldLinks)
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodCountCouldNotFindBest
+ 
+
+PS E:\Scripts\peteshaw> $contentType = Get-PnPContentType -Identity 0x010100A5F7A847844E894A839
+
+PS E:\Scripts\peteshaw> $ctx.Load($contentType.FieldLinks)
+Cannot find an overload for "loaD" and the argument count: "1".
+At line:1 char:1
++ $ctx.Load($contentType.FieldLinks)
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodCountCouldNotFindBest
+ 
+
+PS E:\Scripts\peteshaw> $ctx.Load($contentType)
+Cannot find an overload for "loaD" and the argument count: "1".
+At line:1 char:1
++ $ctx.Load($contentType)
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodCountCouldNotFindBest
+ 
+
+PS E:\Scripts\peteshaw> $ctx.ExecuteQuery()
+
+PS E:\Scripts\peteshaw> $contentType
+
+PS E:\Scripts\peteshaw> $contentTypes
+An error occurred while enumerating through a collection: The collection has not been initialized. It has not been requested or the request has not been executed. It may need to be explicitly requested..
+At line:1 char:1
++ $contentTypes
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (Microsoft.Share...nt.ContentType]:<GetEnumerator>d__0) [], RuntimeException
+    + FullyQualifiedErrorId : BadEnumeration
+ 
+
+PS E:\Scripts\peteshaw> $contentTypes.RefreshLoad()
+
+PS E:\Scripts\peteshaw> $ctx
+
+
+RetryCount                   : 10
+Delay                        : 1000
+PropertyBag                  : {}
+Web                          : Microsoft.SharePoint.Client.Web
+Site                         : Microsoft.SharePoint.Client.Site
+RequestResources             : Microsoft.SharePoint.Client.RequestResources
+FormDigestHandlingEnabled    : True
+ServerVersion                : 16.0.21903.12006
+Url                          : https://usfema.sharepoint.com/teams/R10MITHMA
+ApplicationName              : SharePoint PnP PowerShell Library
+ClientTag                    : PnPPS:2012:Get-PnPContentType
+DisableReturnValueCache      : True
+ValidateOnClient             : True
+AuthenticationMode           : Default
+FormsAuthenticationLoginInfo : 
+Credentials                  : Microsoft.SharePoint.Client.SharePointOnlineCredentials
+WebRequestExecutorFactory    : Microsoft.SharePoint.Client.DefaultWebRequestExecutorFactory
+PendingRequest               : Microsoft.SharePoint.Client.ClientRequest
+HasPendingRequest            : True
+Tag                          : 
+RequestTimeout               : 1800000
+StaticObjects                : {[Microsoft$SharePoint$SPContext$Current, Microsoft.SharePoint.Client.RequestContext]}
+ServerSchemaVersion          : 15.0.0.0
+ServerLibraryVersion         : 16.0.21903.12006
+RequestSchemaVersion         : 15.0.0.0
+TraceCorrelationId           : 6af607a0-100a-1000-57bb-91b2e0dd12ef
+
+
+
+
+PS E:\Scripts\peteshaw> $web = $ctx.Web
+
+PS E:\Scripts\peteshaw> $ctx.Load($web)
+
+PS E:\Scripts\peteshaw> $web
+
+Title ServerRelativeUrl Id
+----- ----------------- --
+                          
+
+
+
+PS E:\Scripts\peteshaw> $ctx.Load($ctype)
+Cannot find an overload for "loaD" and the argument count: "1".
+At line:1 char:1
++ $ctx.Load($ctype)
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodCountCouldNotFindBest
+ 
+
+PS E:\Scripts\peteshaw> $ctype = Get-PnPContentType -Identity 0x010100A5F7A847844E894A839
+
+PS E:\Scripts\peteshaw> $ctype
+
+PS E:\Scripts\peteshaw> $ctx.LoadQuery($ctype)
+Cannot find an overload for "LoadQuery" and the argument count: "1".
+At line:1 char:1
++ $ctx.LoadQuery($ctype)
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodCountCouldNotFindBest
+ 
+
+PS E:\Scripts\peteshaw> $List = $Ctx.Web.Lists.GetByTitle($ListName)
+Exception calling "GetByTitle" with "1" argument(s): "The 'title' argument is invalid."
+At line:1 char:1
++ $List = $Ctx.Web.Lists.GetByTitle($ListName)
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+ 
+
+PS E:\Scripts\peteshaw> $List = $Ctx.Load($web)
+
+PS E:\Scripts\peteshaw> $web = $Ctx.Load($web)
+
+PS E:\Scripts\peteshaw> $list = $ctx.Web.Lists.GetByTitle("Disaster Grants")
+
+PS E:\Scripts\peteshaw> $ctx.load($list)
+
+PS E:\Scripts\peteshaw> $ContentTypeColl = $List.ContentTypes
+
+PS E:\Scripts\peteshaw> $Ctx.Load($ContentTypeColl)
+
+PS E:\Scripts\peteshaw>   $Ctx.ExecuteQuery()
+
+PS E:\Scripts\peteshaw> 

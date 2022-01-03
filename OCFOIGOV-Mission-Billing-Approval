@@ -1,0 +1,6 @@
+vsite = https://usfema.sharepoint.com/teams/OCFOIGOV/MBA
+vList = Regional Test Library
+
+On vList.CreateOrUpdate
+
+vGetMembers

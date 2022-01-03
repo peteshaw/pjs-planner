@@ -1,0 +1,49 @@
+INBOX
+  FLOW for Mike Townsend
+  AWS Cert Questions/Study
+  FLOWs for gTrack 
+  
+
+TICKETS (prefix wth INC00000)
+  1887645 - Colton Baker - Power Automate Assitance
+    emailed 11/29 waiting for reply.
+  1923569 - Jewel Smith  - SharePoint 
+    y1206 - Emailed Jewel with some ideas about a solution.
+    y1207 - Spoke with Jewel yesterday, waiting to here about when to schedule a second meeting.
+  1933714 - Ardreanna Johnson - Electronoc Routing
+    y1206-emailed on 12/3 , replied asking to set up a meeting
+    y1208- set up meeting and sent out for friday (y1210-1000)
+  1940596 - Shellie Nix - Assistance with new Flow Development
+    y1206- meeting with Shellie tomorrow (12/7) and wil; discuss
+  1943551 - Mike Townsend - Create Power Automate Flow with fields in list (?)
+    y1206 - Emailed Mike asking to clarify details about the request.
+    y1208 - working on the solution
+  1911303 - John Cortright - Search COnfiguration
+    y1206 - spent some time trying to figure out how to go about doing this
+    need to work on putting a solution together for this.
+    Replied today (y1208-1420) recomending a metadata based approach 
+
+
+WORKFLOWS
+  PRISM - low priority
+    PRISM Calendar Enterprise
+    PRISM Sens Registration and Attendee Email
+  GTRACK
+    Generate Recieved Reports (new quarter)
+    manage Program Reports - set Program Key
+    manage POP Extensions
+    manage CLP Extensions
+    Manage Received Reports Entry
+    manage Active Quarters
+    Generate Program POC Display Name
+    Generate Grant Award POC Display Name
+    PROGRESS
+      Working on the Generate New Quarter Workflow - see onenote
+    
+COMPLETED ITEMS
+  TICKETS 
+    1942171 - Jeffrey Markham - help removing column
+      y1206-working on this now.
+      FIXED!
+    1932637 - Frank MacCormack - Break Inheritance on List
+      this has been completed
