@@ -1,30 +1,10 @@
 INBOX
-  FLOW for Mike Townsend
-  AWS Cert Questions/Study
-  FLOWs for gTrack 
   
 
 TICKETS (prefix wth INC00000)
-  1940596 - Shellie Nix - Assistance with new Flow Development
-    y1206- meeting with Shellie tomorrow (12/7) and wil; discuss
-  1911303 - John Cortright - Search COnfiguration
-    y1206 - spent some time trying to figure out how to go about doing this
-    need to work on putting a solution together for this.
-    Replied today (y1208-1420) recomending a metadata based approach 
 
 
 WORKFLOWS
-  GTRACK
-    Generate Recieved Reports (new quarter)
-    manage Program Reports - set Program Key
-    manage POP Extensions
-    manage CLP Extensions
-    Manage Received Reports Entry
-    manage Active Quarters
-    Generate Program POC Display Name
-    Generate Grant Award POC Display Name
-    PROGRESS
-      Working on the Generate New Quarter Workflow - see onenote
     
 COMPLETED ITEMS
   TICKETS 
