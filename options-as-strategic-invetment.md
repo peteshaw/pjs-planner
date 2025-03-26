@@ -39,3 +39,6 @@
                 * Stop Limit Order
 * Part 2 - Call Option Strategies
     * Chapter 2: Covered Call Writing
+        * The importance of covered call writing
+            * CC writing for downside protection
+            * Covered writing philosophy
